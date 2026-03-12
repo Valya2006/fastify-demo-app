@@ -9,7 +9,7 @@ button.addEventListener('click', async () => {
 	if (text === 'Запрос прошел успешно') {
 		button.disabled = false
 	  button.textContent = 'Сделать запрос на API'
-		p.textContent = 'Запрос прошел успешно'
+		p.textContent = 'Запрос прошел успешно ✅'
 		console.log('Запрос прошел успешно')
 	}
 })

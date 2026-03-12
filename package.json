@@ -1,0 +1,27 @@
+{
+  "name": "fastify-demo-app",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+		
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valya2006/fastify-demo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valya2006/fastify-demo-app/issues"
+  },
+  "homepage": "https://github.com/Valya2006/fastify-demo-app#readme",
+  "dependencies": {
+    "@fastify/static": "^9.0.0",
+    "fastify": "^5.8.2",
+    "lodash": "^4.17.23"
+  }
+}

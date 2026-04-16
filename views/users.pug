@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Список пользователей
+  body
+    h1 Список пользователей
+    
+    ul
+      each user in users
+        li
+          strong #{user.name} 
+          |  - #{user.email}
+    
+    a(href="/users/create") Создать нового пользователя

@@ -6,7 +6,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
-		
   },
   "repository": {
     "type": "git",
@@ -20,8 +19,11 @@
   },
   "homepage": "https://github.com/Valya2006/fastify-demo-app#readme",
   "dependencies": {
+    "@fastify/formbody": "^8.0.2",
     "@fastify/static": "^9.0.0",
+    "@fastify/view": "^11.1.1",
     "fastify": "^5.8.2",
-    "lodash": "^4.17.23"
+    "lodash": "^4.17.23",
+    "pug": "^3.0.4"
   }
 }

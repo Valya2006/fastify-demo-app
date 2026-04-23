@@ -5,10 +5,20 @@ html
   body
     h1 Список пользователей
     
-    ul
-      each user in users
-        li
-          strong #{user.name} 
-          |  - #{user.email}
+    a(href="/users/create") Создать пользователя
     
-    a(href="/users/create") Создать нового пользователя
+    table(border="1")
+      tr
+        th ID
+        th Имя
+        th Email
+        th Действия
+      each user in users
+        tr
+          td= user.id
+          td= user.name
+          td= user.email
+          td
+            a(href=`/users/edit/${user.id}`) Редактировать
+            form(action=`/users/delete/${user.id}` method="POST" style="display: inline")
+              button(type="submit" onclick="return confirm('Удалить пользователя?')") Удалить
